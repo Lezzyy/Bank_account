@@ -104,12 +104,25 @@ textarea {
 /*index*/
 
 .TabList{
-margin-top: 30px;
+margin-top: 60px;
 border-radius: 5px;
 width: 50%;
 float: none;
 margin-bottom: 100px;
 }
+
+.btn-custom{
+  background-color: #00918F;
+  border-radius: 5px;
+  margin-top: 5px;
+  float: right;
+  font-weight: bold;
+}
+
+.btn-custom:hover{
+  background-color:#003D4E;
+}
+
 
 /*footer*/
 footer {

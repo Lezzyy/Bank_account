@@ -2,6 +2,13 @@
   include("template/header.php")
  ?>
 
+<div class="container">
+ <?php
+echo "<a class='btn btn-custom btn-sm text-white'>Create a new account</a>";
+ ?>
+</div>
+
+
  <div class="container TabList">
      <h2 class="text-center">Account</h2>
    <table class="table table-striped table-responsive text-center">
