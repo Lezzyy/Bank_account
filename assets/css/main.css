@@ -94,8 +94,23 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.jumbotron {
+  background-color: #006269;
+  color: white;
+}
 
-
+footer {
+margin-top: -30px;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #006269;
+height: 60px;
+line-height: 60px;
+color: white;
+text-align: center;
+}
 
 /* ##################################################################### */
 /* ##########################   SMARTPHONE   ########################### */
