@@ -94,11 +94,24 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/*header*/
 .jumbotron {
   background-color: #006269;
   color: white;
 }
 
+/*index*/
+
+.TabList{
+margin-top: 30px;
+border-radius: 5px;
+width: 50%;
+float: none;
+margin-bottom: 100px;
+}
+
+/*footer*/
 footer {
 margin-top: -30px;
 position: fixed;
