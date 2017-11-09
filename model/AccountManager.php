@@ -32,7 +32,16 @@ public function getAccount($id){
   return $account;
 }
 
+// request to add an account
 
+public function addAccount($account){
+  $response=$this->db->prepare('INSERT INTO accountData(number, account, name, amount) VALUES(:number, :account, :name, :amount)');
+  $response->bindValue(':number', $account->getNumber());
+  $response->bindValue(':account', $account->getAccount(), PDO::PARAM_STR);
+  $response->bindValue(':name', $account->getName(), PDO::PARAM_STR);
+  $response->bindValue(':amount', $account->getAmount());
+  $response->execute();
+}
 
 
 

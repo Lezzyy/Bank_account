@@ -10,7 +10,7 @@
   <body>
     <header>
       <div class="header jumbotron">
-          <a href="../controllers/index.php" class="col-md-1">HOME</a>
+          <a href="../controllers/index.php" class="btn btn-custom">HOME</a>
           <h1 class="text-center">Bank account</h1>
       </div>
 

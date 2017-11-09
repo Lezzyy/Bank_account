@@ -1,14 +1,14 @@
 <?php
-  include("template/header.php")
+  include("template/header.php");
  ?>
  <div class="container transaction">
-   <h2 class="text-center">Bank transactions</h2>
-   <!-- <div class="row">
-   <div class="col-md-4 text-center"> -->
- <a class='btn btn-custom btn-sm' href='../controllers/single.php?id=<?php $account->getId()?>'>Delete</a></td>
- <a class='btn btn-custom btn-sm' href='../controllers/single.php?id=<?php $account->getId()?>'>Transfer</a></td>
- <a class='btn btn-custom btn-sm' href='../controllers/single.php?id=<?php $account->getId()?>'>Withdraw</a></td>
- <a class='btn btn-custom btn-sm' href='../controllers/single.php?id=<?php $account->getId()?>'>Payment</a></td>
+   <h2>Bank transactions</h2>
+ <?php
+  echo "<a class='btn btn-custom btn-sm' href='../controllers/.php?id=".$account->getId()."'>Delete</a>";
+  echo "<a class='btn btn-custom btn-sm' href='../controllers/.php?id=".$account->getId()."'>Transfer</a>";
+  echo "<a class='btn btn-custom btn-sm' href='../controllers/withdraw.php?id=".$account->getId()."'>Withdraw</a>";
+  echo "<a class='btn btn-custom btn-sm' href='../controllers/withdraw.php?id=".$account->getId()."'>Payment</a>";
+?>
 <!-- </div>
 </div> -->
 </div>
@@ -41,5 +41,5 @@
 
 
  <?php
-   include("template/footer.php")
+   include("template/footer.php");
   ?>

@@ -102,16 +102,18 @@ textarea {
 }
 
 
-.jumbotron a{
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: large;
+.header .btn-custom{
+  float:left;
+  background-color: white;
+  color:#006269;
 }
 
-.jumbotron a:hover{
-  color: #041A1F;
+.header .btn-custom:hover{
+  float:left;
+  background-color: #003D4E;
+  color:white;
 }
+
 
 /*index*/
 
@@ -140,6 +142,7 @@ margin-bottom: 100px;
 /*single page*/
 .transaction a{
 margin-right: 15px;
+float:none;
 }
 
 .OneList{
@@ -148,6 +151,23 @@ margin-right: 15px;
   float: none;
 }
 
+/*withdraw page*/
+.withdraw h4{
+  color: #006269;
+  font-weight: bold;
+}
+
+.card{
+  width: 300px;
+height: auto;
+margin: 0 auto;
+float: none;
+margin-bottom: 10px;
+}
+
+.card .btn-custom{
+  font-weight: normal;
+}
 
 /*footer*/
 footer {
