@@ -4,7 +4,7 @@
 
 <div class="container">
  <?php
-echo "<a class='btn btn-custom btn-sm text-white'>Create a new account</a>";
+echo "<a class='btn btn-custom btn-sm text-white' href='../controllers/create.php'>Create a new account</a>";
  ?>
 </div>
 
