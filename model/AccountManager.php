@@ -1,13 +1,38 @@
 <?php
 
 class AccountManager{
-  public function getDb(){
-  $db = new PDO('mysql:host=localhost;dbname=bankAccount;charset=utf8', 'root', 'gj7b!17LA');
-  return $db;
+  private $db; // Instance de PDO.
+
+
+    public function __construct($db)
+    {
+        $this->setDb($db);
+    }
+// request to show all the accounts
+
+public function getAllAccounts(){
+
+  $response=$this->db->query('SELECT * FROM accountData');
+  $accounts=$response->fetchAll(PDO::FETCH_ASSOC);
+  foreach ($accounts as $key => $value) {
+    $accounts[$key]= new Account($value);
+  }
+  return $accounts;
 }
 
 
+public function getDb()
+  {
+      return $this->db;
+  }
 
+  /**
+   * @param mixed $db
+   */
+  public function setDb($db)
+  {
+      $this->db = $db;
+  }
 }
 
  ?>

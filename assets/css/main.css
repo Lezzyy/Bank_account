@@ -113,6 +113,7 @@ margin-bottom: 100px;
 
 .btn-custom{
   background-color: #00918F;
+  color: white;
   border-radius: 5px;
   margin-top: 5px;
   float: right;
@@ -121,6 +122,7 @@ margin-bottom: 100px;
 
 .btn-custom:hover{
   background-color:#003D4E;
+  color: white;
 }
 
 
