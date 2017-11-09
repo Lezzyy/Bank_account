@@ -9,7 +9,9 @@
   </head>
   <body>
     <header>
-      <!-- <div class="container-fluid">         -->
-      <h1 class="text-center jumbotron">Bank account</h1>
-    <!-- </div> -->
+      <div class="header jumbotron">
+          <a href="../controllers/index.php" class="col-md-1">HOME</a>
+          <h1 class="text-center">Bank account</h1>
+      </div>
+
     </header>
