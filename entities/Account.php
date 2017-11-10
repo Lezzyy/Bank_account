@@ -71,6 +71,14 @@ public function setName($name){
 public function setAmount(int $amount){
   $this->amount=$amount;
 }
+
+public function withdrawAmount(int $amount){
+  $this->amount -= $amount;
+}
+
+public function paymentAmount(int $amount){
+  $this->amount += $amount;
+}
 }
 
  ?>

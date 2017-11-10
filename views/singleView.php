@@ -7,7 +7,8 @@
   echo "<a class='btn btn-custom btn-sm' href='../controllers/delete.php?id=".$account->getId()."'>Delete</a>";
   echo "<a class='btn btn-custom btn-sm' href='../controllers/.php?id=".$account->getId()."'>Transfer</a>";
   echo "<a class='btn btn-custom btn-sm' href='../controllers/withdraw.php?id=".$account->getId()."'>Withdraw</a>";
-  echo "<a class='btn btn-custom btn-sm' href='../controllers/.php?id=".$account->getId()."'>Payment</a>";
+  echo "<a class='btn btn-custom btn-sm' href='../controllers/payment.php?id=".$account->getId()."'>Payment</a>";
+  echo "<a class='btn btn-custom btn-sm' href='../controllers/create.php?id=".$account->getId()."'>Create a new account</a>";
 ?>
 <!-- </div>
 </div> -->
