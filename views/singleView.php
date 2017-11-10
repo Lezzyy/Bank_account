@@ -4,10 +4,10 @@
  <div class="container transaction">
    <h2>Bank transactions</h2>
  <?php
-  echo "<a class='btn btn-custom btn-sm' href='../controllers/.php?id=".$account->getId()."'>Delete</a>";
+  echo "<a class='btn btn-custom btn-sm' href='../controllers/delete.php?id=".$account->getId()."'>Delete</a>";
   echo "<a class='btn btn-custom btn-sm' href='../controllers/.php?id=".$account->getId()."'>Transfer</a>";
   echo "<a class='btn btn-custom btn-sm' href='../controllers/withdraw.php?id=".$account->getId()."'>Withdraw</a>";
-  echo "<a class='btn btn-custom btn-sm' href='../controllers/withdraw.php?id=".$account->getId()."'>Payment</a>";
+  echo "<a class='btn btn-custom btn-sm' href='../controllers/.php?id=".$account->getId()."'>Payment</a>";
 ?>
 <!-- </div>
 </div> -->

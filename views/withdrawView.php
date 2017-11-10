@@ -12,9 +12,10 @@ include("template/header.php");
     <p class="card-text"><strong>User name : </strong><?php echo $account->getName();?></p>
     <p class="card-text"><strong>Current amount :</strong> <?php echo $account->getAmount();?>€</p>
 
-    <form class="" action="" method="post">
+    <form class="" action="../controllers/withdraw.php" method="post">
     <input type="text" name="amount" value="" placeholder="Amount to withdraw">
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+    <input type="hidden" name="id" value="<?php echo $account->getId();?>">
     <input type="submit" name="register" value="Withdraw" class="btn btn-custom">
   </form>
   </div>

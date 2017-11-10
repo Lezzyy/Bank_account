@@ -43,6 +43,20 @@ public function addAccount($account){
   $response->execute();
 }
 
+// request to do a withdrawal
+public function updateAmount($amount){
+  $response=$this->db->prepare('UPDATE accountData SET amount=:amount WHERE id=:id');
+  $response->bindValue(':amount', $amount->getAmount());
+  $response->bindValue(':id', $amount->getId());
+  $response->execute();
+}
+
+
+
+// delete an account
+public function deleteAccount($id){
+  $response=$this->db->query('DELETE FROM accountData WHERE id='.$id);
+}
 
 
 public function getDb()
