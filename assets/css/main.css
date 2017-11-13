@@ -95,7 +95,150 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*header*/
+.jumbotron {
+  background-color: #006269;
+  color: white;
+}
 
+
+.header .btn-custom{
+  float:left;
+  background-color: white;
+  color:#006269;
+}
+
+.header .btn-custom:hover{
+  float:left;
+  background-color: #003D4E;
+  color:white;
+}
+
+
+/*index*/
+
+.TabList{
+margin-top: 60px;
+border-radius: 5px;
+width: 70%;
+float: none;
+margin-bottom: 100px;
+}
+
+.btn-custom{
+  background-color: #00918F;
+  color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+  float: right;
+  font-weight: bold;
+}
+
+.btn-custom:hover{
+  background-color:#003D4E;
+  color: white;
+}
+
+/*single page*/
+.transaction a{
+margin-right: 15px;
+float:none;
+}
+
+.OneList table{
+  border-radius: 5px;
+  width: 80%;
+  float: none;
+  /*margin-left: 335px;*/
+  margin : 0 25%;
+}
+
+.OneList h3{
+  font-size: large;
+  margin-top: 30px;
+  font-weight : bold;
+}
+
+/*withdraw page*/
+.withdraw h4{
+  color: #006269;
+  font-weight: bold;
+}
+
+.card{
+  width: 300px;
+height: auto;
+margin: 0 auto;
+float: none;
+margin-bottom: 10px;
+}
+
+.card .btn-custom{
+  font-weight: normal;
+}
+
+/*create page*/
+
+#modifyForm input{
+text-align: center;
+width:300px;
+margin: 0 auto;
+float: none;
+}
+
+
+#modifyForm .btn-custom{
+  text-align: center;
+  width:150px;
+  margin: 0 43%;
+  float: none;
+  font-weight: bolder;
+  background-color: #00918F;
+}
+
+#modifyForm .btn-custom:hover{
+  background-color: #003D4E;
+  font-weight:bolder;
+  color: white;
+}
+
+/*transfer page*/
+
+.TransferList{
+  margin-top: 60px;
+  border-radius: 5px;
+  width: 70%;
+  float: none;
+  margin-bottom: 100px;
+}
+
+.TransferList h3{
+  font-size: large;
+  font-weight: bold;
+  color: #00918F;
+}
+
+.TransferList input{
+  text-align: center;
+  /*width:300px;*/
+  /*margin: 0 auto;*/
+  float: none;
+}
+
+
+/*footer*/
+footer {
+margin-top: -30px;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: #006269;
+height: 60px;
+line-height: 60px;
+color: white;
+text-align: center;
+}
 
 /* ##################################################################### */
 /* ##########################   SMARTPHONE   ########################### */
