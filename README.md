@@ -8,7 +8,11 @@ Fonctions of this app :
 - do payment
 
 The graphical charter :
+
 color : white & #006269
+
 background color : white 
+
 title color : #006269
+
 header & footer : #006269
