@@ -10,7 +10,7 @@ echo "<a class='btn btn-custom btn-sm text-white' href='../controllers/create.ph
 
 
  <div class="container TabList">
-     <h2 class="text-center">Account</h2>
+     <h2 class="text-center">Accounts</h2>
    <table class="table table-striped table-responsive text-center">
      <thead>
        <tr>
@@ -29,8 +29,7 @@ echo "<a class='btn btn-custom btn-sm text-white' href='../controllers/create.ph
      echo "<td>".$account->getAccount()."</td>";
      echo "<td>".$account->getName()."</td>";
      echo "<td>".$account->getAmount()." €</td>";
-     echo "<td><a class='btn btn-custom btn-sm' href='../controllers/single.php?id=".$account->getId()."'>See more</a></td>";
-     echo "<td><a class='btn btn-custom btn-sm' href='../controllers/transfer.php?number=".$account->getNumber()."'>Transfer</a></td>";
+     echo "<td><a class='btn btn-custom btn-sm' href='../controllers/single.php?id=".$account->getId()."'>Do bank transaction</a></td>";
      echo "</tr>";
    } ?>
      </tbody>

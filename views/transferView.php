@@ -6,6 +6,7 @@ include("template/header.php");
      <h2 class="text-center">Transfer accounts</h2>
       <div class="row">
        <div class="col-md-4">
+         <form class="" action="../controllers/transfer.php" method="post">
          <table class="table table-striped table-responsive text-center">
            <thead>
              <tr>
@@ -13,27 +14,22 @@ include("template/header.php");
                <th></th>
                <th>Account name</th>
                <th>Amount</th>
-         <!-- <th>Bank tansactions</th> -->
               </tr>
             </thead>
           <tbody>
+
             <?php foreach ($accounts as $account) {
               echo "<tr>";
-              echo "<td><input type='radio' name='account' value=''></td>";
+              echo "<td><input type='radio' name='account' value='".$account->getId()."'></td>";
               echo "<td>".$account->getAccount()."</td>";
               echo "<td>".$account->getAmount()." €</td>";
-              echo "<td><input type='hidden' name='id' value='".$account->getId()."'></td>";
-     //  echo "<td><a class='btn btn-custom btn-sm' href='../controllers/single.php?id=".$account->getId()."'>See more</a></td>";
               echo "</tr>";
             } ?>
           </tbody>
         </table>
     </div>
-    <!-- </div> -->
-  <!-- </div> -->
 
-   <!-- <div class="container TransferList2"> -->
-     <!-- <div class="row"> -->
+
        <div class="col-md-4">
          <table class="table table-striped table-responsive text-center">
            <thead>
@@ -42,30 +38,28 @@ include("template/header.php");
               <th></th>
               <th>Account name</th>
               <th>Amount</th>
-           <!-- <th>Bank tansactions</th> -->
             </tr>
           </thead>
         <tbody>
          <?php foreach ($accounts as $account) {
           echo "<tr>";
-          echo "<td><input type='radio' name='transferAccount' value=''></td>";
+          echo "<td><input type='radio' name='transferAccount' value='".$account->getId()."'></td>";
           echo "<td>".$account->getAccount()."</td>";
           echo "<td>".$account->getAmount()." €</td>";
-          echo "<td><input type='hidden' name='id' value='".$account->getId()."'></td>";
-     //  echo "<td><a class='btn btn-custom btn-sm' href='../controllers/single.php?id=".$account->getId()."'>See more</a></td>";
           echo "</tr>";
          } ?>
         </tbody>
       </table>
     </div>
+
+
      <div class="col-md-4">
-    <form class="" action="" method="post">
       <input type="texte" name="Amount" value="" placeholder="Enter an amount in €">
       <input type="submit" name="" value="Transfer" class="btn btn-custom">
-    </form>
   </div>
+</form>
+</div>
   </div>
- </div>
 </main>
 
 
