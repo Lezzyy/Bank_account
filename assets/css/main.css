@@ -145,10 +145,18 @@ margin-right: 15px;
 float:none;
 }
 
-.OneList{
+.OneList table{
   border-radius: 5px;
-  width: 70%;
+  width: 80%;
   float: none;
+  /*margin-left: 335px;*/
+  margin : 0 25%;
+}
+
+.OneList h3{
+  font-size: large;
+  margin-top: 30px;
+  font-weight : bold;
 }
 
 /*withdraw page*/
@@ -168,6 +176,55 @@ margin-bottom: 10px;
 .card .btn-custom{
   font-weight: normal;
 }
+
+/*create page*/
+
+#modifyForm input{
+text-align: center;
+width:300px;
+margin: 0 auto;
+float: none;
+}
+
+
+#modifyForm .btn-custom{
+  text-align: center;
+  width:150px;
+  margin: 0 43%;
+  float: none;
+  font-weight: bolder;
+  background-color: #00918F;
+}
+
+#modifyForm .btn-custom:hover{
+  background-color: #003D4E;
+  font-weight:bolder;
+  color: white;
+}
+
+/*transfer page*/
+
+.TransferList{
+  margin-top: 60px;
+  border-radius: 5px;
+  width: 70%;
+  float: none;
+  margin-bottom: 100px;
+}
+
+.TransferList h3{
+  font-size: large;
+  font-weight: bold;
+  color: #00918F;
+}
+
+.TransferList input{
+  text-align: center;
+  /*width:300px;*/
+  /*margin: 0 auto;*/
+  float: none;
+}
+
 
 /*footer*/
 footer {

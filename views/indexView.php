@@ -22,13 +22,15 @@ echo "<a class='btn btn-custom btn-sm text-white' href='../controllers/create.ph
        </tr>
      </thead>
      <tbody>
+    <!-- show all the accounts -->
        <?php foreach ($accounts as $account){
      echo "<tr>";
      echo "<td>".$account->getNumber()."</td>";
      echo "<td>".$account->getAccount()."</td>";
      echo "<td>".$account->getName()."</td>";
-     echo "<td>".$account->getAmount()."</td>";
+     echo "<td>".$account->getAmount()." €</td>";
      echo "<td><a class='btn btn-custom btn-sm' href='../controllers/single.php?id=".$account->getId()."'>See more</a></td>";
+     echo "<td><a class='btn btn-custom btn-sm' href='../controllers/transfer.php?number=".$account->getNumber()."'>Transfer</a></td>";
      echo "</tr>";
    } ?>
      </tbody>

@@ -58,6 +58,22 @@ public function deleteAccount($id){
   $response=$this->db->query('DELETE FROM accountData WHERE id='.$id);
 }
 
+// request to select only the accounts of one user
+public function getUserAccounts($number){
+  $response=$this->db->prepare('SELECT * FROM accountData WHERE number=:number');
+  $response->execute(array(
+    'number'=>$number
+  ));
+  $accounts=$response->fetchAll(PDO::FETCH_ASSOC);
+  foreach ($accounts as $key => $value) {
+    $accounts[$key]= new Account($value);
+  }
+//   // $account=$response->fetch(PDO::FETCH_ASSOC);
+//   // $account= new Account($account);
+  return $accounts;
+}
+
+
 
 public function getDb()
   {
