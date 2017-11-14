@@ -149,8 +149,8 @@ float:none;
   border-radius: 5px;
   width: 80%;
   float: none;
-  /*margin-left: 335px;*/
   margin : 0 25%;
+  margin-bottom: 20px;
 }
 
 .OneList h3{
@@ -183,6 +183,7 @@ margin-bottom: 10px;
 text-align: center;
 width:300px;
 margin: 0 auto;
+margin-bottom: 10px;
 float: none;
 }
 
@@ -190,7 +191,6 @@ float: none;
 #modifyForm .btn-custom{
   text-align: center;
   width:150px;
-  margin: 0 43%;
   float: none;
   font-weight: bolder;
   background-color: #00918F;
@@ -228,7 +228,7 @@ float: none;
 
 /*footer*/
 footer {
-margin-top: -30px;
+margin-top: -100px;
 position: fixed;
 left: 0;
 bottom: 0;
