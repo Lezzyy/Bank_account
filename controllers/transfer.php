@@ -14,24 +14,30 @@ if(isset($_GET['number'])){
 
 
 if (isset($_POST['Amount']) && $_POST['Amount']>0){
- // if(isset($_POST['account'])){
-    // we get and show the account selected
+    // we get the first account selected
     $account = $manager->getAccount($_POST['account']);
     // we get the initial amount
     $accountFrom = $account->getAmount();
 
+    // we get the second account selected
     $secondAccount = $manager->getAccount($_POST['transferAccount']);
+    // we get the amount
     $accountTo = $secondAccount->getAmount();
 
+// if the amount enter is superior or equal of the first amount
  if($_POST['Amount']<= $accountFrom){
+      // we add the amount enter on the second account
        $secondAccount->paymentAmount($_POST['Amount']);
+      //  we take off the amount enter on the first account
        $account -> withdrawAmount($_POST['Amount']);
 
+      //  we update the second account with the new amount
        $manager-> updateAmount($secondAccount);
+       //  we update the first account with the new amount
        $manager -> updateAmount($account);
          header('Location: index.php');
  } else {
-  echo 'not ok';
+  echo 'enter a correct value';
 }
 }
 

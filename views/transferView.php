@@ -7,6 +7,7 @@ include("template/header.php");
       <div class="row">
        <div class="col-md-4">
          <form class="" action="../controllers/transfer.php" method="post">
+           <!-- we show the first account to select -->
          <table class="table table-striped table-responsive text-center">
            <thead>
              <tr>
@@ -31,6 +32,8 @@ include("template/header.php");
 
 
        <div class="col-md-4">
+         <!-- we show the second account to select -->
+
          <table class="table table-striped table-responsive text-center">
            <thead>
              <tr>
@@ -54,6 +57,7 @@ include("template/header.php");
 
 
      <div class="col-md-4">
+       <!-- we enter the amount to transfer-->
       <input type="texte" name="Amount" value="" placeholder="Enter an amount in €">
       <input type="submit" name="" value="Transfer" class="btn btn-custom">
   </div>
